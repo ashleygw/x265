@@ -84,7 +84,7 @@ if(ENABLE_ASSEMBLY AND X86)
 endif(ENABLE_ASSEMBLY AND X86)
 
 if(ENABLE_ASSEMBLY AND (ARM OR CROSS_COMPILE_ARM))
-    set(C_SRCS asm-primitives.cpp pixel.h mc.h ipfilter8.h blockcopy8.h dct8.h loopfilter.h)
+    set(C_SRCS asm-primitives.cpp blockcopy8.c pixel.h mc.h ipfilter8.h blockcopy8.h dct8.h loopfilter.h)
 
     # add ARM assembly/intrinsic files here
     set(A_SRCS asm.S cpu-a.S mc-a.S sad-a.S pixel-util.S ssd-a.S blockcopy8.S ipfilter8.S dct-a.S)

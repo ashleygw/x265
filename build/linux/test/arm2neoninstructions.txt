@@ -1,0 +1,1024 @@
+Using random seed 5CD8A4B0 8bit
+Testing primitives: ARMv6
+Testing primitives: NEON
+
+Test performance improvement with full optimizations
+== pixel primitives ==
+           satd[  4x4]	1.24x 	 4.15     	 5.14    
+         avg_pp[  4x4]	1.21x 	 4.05     	 4.91    
+ avg_pp_aligned[  4x4]	1.21x 	 4.05     	 4.90    
+            sad[  4x4]	1.08x 	 3.91     	 4.23    
+         sad_x3[  4x4]	1.58x 	 4.31     	 6.82    
+         sad_x4[  4x4]	1.77x 	 4.42     	 7.84    
+        copy_pp[  4x4]	1.05x 	 3.87     	 4.06    
+         addAvg[  4x4]	1.17x 	 4.26     	 4.98    
+ addAvg_aligned[  4x4]	1.14x 	 4.33     	 4.93    
+         sse_pp[  4x4]	1.05x 	 4.08     	 4.28    
+         sse_ss[  4x4]	1.19x 	 4.11     	 4.89    
+         sub_ps[  4x4]	1.11x 	 4.00     	 4.45    
+         add_ps[  4x4]	1.09x 	 4.19     	 4.55    
+ add_ps_aligned[  4x4]	1.07x 	 4.23     	 4.54    
+        copy_ss[  4x4]	1.06x 	 3.88     	 4.10    
+        copy_sp[  4x4]	1.03x 	 4.00     	 4.14    
+        copy_ps[  4x4]	1.03x 	 3.97     	 4.10    
+           satd[  8x8]	1.58x 	 5.12     	 8.08    
+         avg_pp[  8x8]	1.82x 	 4.25     	 7.75    
+ avg_pp_aligned[  8x8]	1.82x 	 4.25     	 7.75    
+            sad[  8x8]	1.16x 	 4.26     	 4.95    
+         sad_x3[  8x8]	3.20x 	 4.81     	 15.41   
+         sad_x4[  8x8]	3.79x 	 5.09     	 19.29   
+        copy_pp[  8x8]	1.25x 	 3.98     	 4.95    
+         addAvg[  8x8]	1.71x 	 4.85     	 8.32    
+ addAvg_aligned[  8x8]	1.70x 	 4.85     	 8.27    
+         sse_pp[  8x8]	1.78x 	 4.41     	 7.85    
+         sse_ss[  8x8]	1.76x 	 4.55     	 8.02    
+         sub_ps[  8x8]	1.42x 	 4.21     	 5.97    
+         add_ps[  8x8]	1.47x 	 4.56     	 6.70    
+ add_ps_aligned[  8x8]	1.44x 	 4.60     	 6.64    
+        copy_ss[  8x8]	1.19x 	 4.14     	 4.93    
+        copy_sp[  8x8]	1.17x 	 4.16     	 4.88    
+        copy_ps[  8x8]	1.19x 	 4.10     	 4.87    
+ [i420] copy_pp[  4x4]	1.06x 	 3.94     	 4.17    
+ [i420]  addAvg[  4x4]	1.16x 	 4.25     	 4.94    
+[i420]  addAvg_aligned[  4x4]	1.15x 	 4.26     	 4.92    
+    [i420] satd[  4x4]	1.24x 	 4.10     	 5.11    
+ [i420] copy_ss[  4x4]	1.06x 	 3.90     	 4.14    
+ [i420] copy_ps[  4x4]	1.03x 	 3.98     	 4.09    
+ [i420] copy_sp[  4x4]	1.02x 	 4.00     	 4.09    
+ [i420]  sub_ps[  4x4]	1.12x 	 4.02     	 4.48    
+ [i420]  add_ps[  4x4]	1.09x 	 4.17     	 4.56    
+[i420]  add_ps_aligned[  4x4]	1.09x 	 4.21     	 4.57    
+ [i422] copy_pp[  4x8]	1.11x 	 4.03     	 4.47    
+ [i422]  addAvg[  4x8]	1.30x 	 4.60     	 5.99    
+[i422]  addAvg_aligned[  4x8]	1.28x 	 4.68     	 6.00    
+    [i422] satd[  4x8]	1.49x 	 4.39     	 6.52    
+ [i422] copy_ss[  4x8]	1.10x 	 4.05     	 4.45    
+ [i422] copy_ps[  4x8]	1.06x 	 4.11     	 4.34    
+ [i422] copy_sp[  4x8]	1.04x 	 4.19     	 4.36    
+ [i422]  sub_ps[  4x8]	1.20x 	 4.22     	 5.05    
+ [i422]  add_ps[  4x8]	1.16x 	 4.49     	 5.22    
+[i422]  add_ps_aligned[  4x8]	1.16x 	 4.48     	 5.21    
+           satd[  8x4]	1.30x 	 4.56     	 5.92    
+         avg_pp[  8x4]	1.44x 	 4.04     	 5.81    
+ avg_pp_aligned[  8x4]	1.42x 	 4.05     	 5.77    
+            sad[  8x4]	1.05x 	 4.06     	 4.26    
+         sad_x3[  8x4]	2.21x 	 4.37     	 9.66    
+         sad_x4[  8x4]	2.57x 	 4.53     	 11.64   
+        copy_pp[  8x4]	1.13x 	 3.86     	 4.36    
+         addAvg[  8x4]	1.37x 	 4.37     	 5.99    
+ addAvg_aligned[  8x4]	1.35x 	 4.40     	 5.96    
+ [i420] copy_pp[  4x2]	1.04x 	 3.89     	 4.03    
+ [i420]  addAvg[  4x2]	1.07x 	 4.07     	 4.37    
+[i420]  addAvg_aligned[  4x2]	1.07x 	 4.10     	 4.40    
+ [i422] copy_pp[  4x4]	1.04x 	 3.96     	 4.13    
+    [i422] satd[  4x4]	1.24x 	 4.14     	 5.11    
+           satd[  4x8]	1.49x 	 4.39     	 6.52    
+         avg_pp[  4x8]	1.37x 	 4.26     	 5.85    
+ avg_pp_aligned[  4x8]	1.36x 	 4.25     	 5.77    
+            sad[  4x8]	1.13x 	 4.03     	 4.57    
+         sad_x3[  4x8]	2.08x 	 4.66     	 9.71    
+         sad_x4[  4x8]	2.39x 	 4.90     	 11.72   
+        copy_pp[  4x8]	1.11x 	 3.97     	 4.39    
+         addAvg[  4x8]	1.30x 	 4.65     	 6.02    
+ addAvg_aligned[  4x8]	1.29x 	 4.68     	 6.03    
+ [i420] copy_pp[  2x4]	1.02x 	 3.93     	 4.02    
+           satd[16x16]	2.99x 	 7.01     	 20.97   
+         avg_pp[16x16]	3.83x 	 4.99     	 19.12   
+ avg_pp_aligned[16x16]	3.87x 	 4.95     	 19.16   
+            sad[16x16]	1.46x 	 5.07     	 7.38    
+         sad_x3[16x16]	7.22x 	 7.48     	 53.98   
+         sad_x4[16x16]	8.22x 	 8.55     	 70.32   
+        copy_pp[16x16]	1.89x 	 4.45     	 8.40    
+         addAvg[16x16]	2.72x 	 7.88     	 21.45   
+ addAvg_aligned[16x16]	2.71x 	 7.90     	 21.38   
+         sse_pp[16x16]	5.10x 	 5.37     	 27.34   
+         sse_ss[16x16]	4.58x 	 6.23     	 28.55   
+         sub_ps[16x16]	2.43x 	 5.23     	 12.68   
+         add_ps[16x16]	2.50x 	 5.97     	 14.95   
+ add_ps_aligned[16x16]	2.46x 	 6.06     	 14.91   
+        copy_ss[16x16]	1.70x 	 4.93     	 8.39    
+        copy_sp[16x16]	1.73x 	 4.90     	 8.45    
+        copy_ps[16x16]	1.71x 	 4.90     	 8.39    
+ [i420] copy_pp[  8x8]	1.25x 	 4.03     	 5.03    
+ [i420]  addAvg[  8x8]	1.73x 	 4.84     	 8.38    
+[i420]  addAvg_aligned[  8x8]	1.71x 	 4.83     	 8.28    
+    [i420] satd[  8x8]	1.59x 	 5.13     	 8.15    
+ [i420] copy_ss[  8x8]	1.21x 	 4.13     	 4.98    
+ [i420] copy_ps[  8x8]	1.20x 	 4.11     	 4.93    
+ [i420] copy_sp[  8x8]	1.18x 	 4.17     	 4.91    
+ [i420]  sub_ps[  8x8]	1.46x 	 4.23     	 6.16    
+ [i420]  add_ps[  8x8]	1.46x 	 4.57     	 6.66    
+[i420]  add_ps_aligned[  8x8]	1.46x 	 4.57     	 6.68    
+ [i422] copy_pp[ 8x16]	1.44x 	 4.22     	 6.09    
+ [i422]  addAvg[ 8x16]	2.18x 	 5.87     	 12.77   
+[i422]  addAvg_aligned[ 8x16]	2.16x 	 5.87     	 12.67   
+    [i422] satd[ 8x16]	2.21x 	 5.68     	 12.55   
+ [i422] copy_ss[ 8x16]	1.38x 	 4.41     	 6.08    
+ [i422] copy_ps[ 8x16]	1.35x 	 4.43     	 5.96    
+ [i422] copy_sp[ 8x16]	1.31x 	 4.54     	 5.96    
+ [i422]  sub_ps[ 8x16]	1.84x 	 4.56     	 8.41    
+ [i422]  add_ps[ 8x16]	1.80x 	 5.30     	 9.54    
+[i422]  add_ps_aligned[ 8x16]	1.77x 	 5.36     	 9.49    
+    [i422] sa8d[ 8x16]	2.35x 	 6.23     	 14.67   
+           satd[ 16x8]	2.26x 	 5.46     	 12.36   
+         avg_pp[ 16x8]	2.63x 	 4.38     	 11.50   
+ avg_pp_aligned[ 16x8]	2.63x 	 4.38     	 11.51   
+            sad[ 16x8]	1.32x 	 4.45     	 5.89    
+         sad_x3[ 16x8]	5.05x 	 5.76     	 29.11   
+         sad_x4[ 16x8]	5.82x 	 6.40     	 37.19   
+        copy_pp[ 16x8]	1.50x 	 4.06     	 6.08    
+         addAvg[ 16x8]	2.14x 	 5.89     	 12.61   
+ addAvg_aligned[ 16x8]	2.14x 	 5.86     	 12.56   
+ [i420] copy_pp[  8x4]	1.13x 	 3.92     	 4.44    
+ [i420]  addAvg[  8x4]	1.36x 	 4.41     	 6.00    
+[i420]  addAvg_aligned[  8x4]	1.37x 	 4.39     	 6.00    
+    [i420] satd[  8x4]	1.32x 	 4.54     	 5.99    
+ [i422] copy_pp[  8x8]	1.25x 	 4.03     	 5.05    
+ [i422]  addAvg[  8x8]	1.73x 	 4.86     	 8.38    
+[i422]  addAvg_aligned[  8x8]	1.71x 	 4.88     	 8.34    
+    [i422] satd[  8x8]	1.59x 	 5.11     	 8.14    
+           satd[ 8x16]	2.20x 	 5.68     	 12.50   
+         avg_pp[ 8x16]	2.50x 	 4.66     	 11.65   
+ avg_pp_aligned[ 8x16]	2.52x 	 4.64     	 11.70   
+            sad[ 8x16]	1.42x 	 4.65     	 6.62    
+         sad_x3[ 8x16]	4.72x 	 5.65     	 26.67   
+         sad_x4[ 8x16]	5.57x 	 6.19     	 34.47   
+        copy_pp[ 8x16]	1.42x 	 4.20     	 5.98    
+         addAvg[ 8x16]	2.16x 	 5.87     	 12.71   
+ addAvg_aligned[ 8x16]	2.18x 	 5.88     	 12.79   
+ [i420] copy_pp[  4x8]	1.11x 	 4.01     	 4.45    
+ [i420]  addAvg[  4x8]	1.29x 	 4.65     	 6.01    
+[i420]  addAvg_aligned[  4x8]	1.30x 	 4.59     	 5.97    
+    [i420] satd[  4x8]	1.49x 	 4.38     	 6.55    
+ [i422] copy_pp[ 4x16]	1.18x 	 4.25     	 5.00    
+ [i422]  addAvg[ 4x16]	1.55x 	 5.42     	 8.42    
+[i422]  addAvg_aligned[ 4x16]	1.56x 	 5.39     	 8.44    
+    [i422] satd[ 4x16]	1.84x 	 5.07     	 9.30    
+           satd[ 16x4]	1.73x 	 4.70     	 8.14    
+         avg_pp[ 16x4]	1.87x 	 4.12     	 7.70    
+ avg_pp_aligned[ 16x4]	1.86x 	 4.15     	 7.72    
+            sad[ 16x4]	1.15x 	 4.14     	 4.75    
+         sad_x3[ 16x4]	3.45x 	 4.79     	 16.52   
+         sad_x4[ 16x4]	4.09x 	 5.06     	 20.67   
+        copy_pp[ 16x4]	1.26x 	 3.93     	 4.94    
+         addAvg[ 16x4]	1.69x 	 4.85     	 8.21    
+ addAvg_aligned[ 16x4]	1.69x 	 4.87     	 8.22    
+ [i420] copy_pp[  8x2]	1.06x 	 3.91     	 4.14    
+ [i420]  addAvg[  8x2]	1.23x 	 4.12     	 5.07    
+[i420]  addAvg_aligned[  8x2]	1.19x 	 4.12     	 4.89    
+ [i422] copy_pp[  8x4]	1.12x 	 3.95     	 4.42    
+ [i422]  addAvg[  8x4]	1.37x 	 4.39     	 6.02    
+[i422]  addAvg_aligned[  8x4]	1.37x 	 4.37     	 5.99    
+    [i422] satd[  8x4]	1.31x 	 4.59     	 6.01    
+         avg_pp[16x12]	3.30x 	 4.68     	 15.42   
+ avg_pp_aligned[16x12]	3.28x 	 4.66     	 15.28   
+            sad[16x12]	1.38x 	 4.75     	 6.57    
+         sad_x3[16x12]	6.39x 	 6.51     	 41.59   
+         sad_x4[16x12]	7.38x 	 7.30     	 53.83   
+        copy_pp[16x12]	1.71x 	 4.24     	 7.23    
+         addAvg[16x12]	2.46x 	 6.88     	 16.92   
+ addAvg_aligned[16x12]	2.46x 	 6.90     	 16.96   
+ [i420] copy_pp[  8x6]	1.18x 	 3.99     	 4.70    
+ [i420]  addAvg[  8x6]	1.52x 	 4.73     	 7.18    
+[i420]  addAvg_aligned[  8x6]	1.57x 	 4.57     	 7.19    
+ [i422] copy_pp[ 8x12]	1.34x 	 4.14     	 5.54    
+ [i422]  addAvg[ 8x12]	1.96x 	 5.40     	 10.59   
+[i422]  addAvg_aligned[ 8x12]	1.96x 	 5.40     	 10.57   
+    [i422] satd[ 8x12]	1.94x 	 6.23     	 12.05   
+           satd[ 4x16]	1.86x 	 5.08     	 9.44    
+         avg_pp[ 4x16]	1.71x 	 4.61     	 7.90    
+ avg_pp_aligned[ 4x16]	1.70x 	 4.65     	 7.93    
+            sad[ 4x16]	1.27x 	 4.22     	 5.35    
+         sad_x3[ 4x16]	2.85x 	 5.42     	 15.47   
+         sad_x4[ 4x16]	3.29x 	 5.90     	 19.40   
+        copy_pp[ 4x16]	1.17x 	 4.20     	 4.91    
+         addAvg[ 4x16]	1.55x 	 5.45     	 8.43    
+ addAvg_aligned[ 4x16]	1.56x 	 5.39     	 8.42    
+ [i420] copy_pp[  2x8]	1.03x 	 4.02     	 4.14    
+ [i422] copy_pp[ 2x16]	1.06x 	 4.23     	 4.48    
+           satd[12x16]	2.57x 	 7.78     	 20.01   
+         avg_pp[12x16]	2.88x 	 5.37     	 15.47   
+ avg_pp_aligned[12x16]	2.86x 	 5.38     	 15.38   
+            sad[12x16]	1.83x 	 5.30     	 9.71    
+         sad_x3[12x16]	4.75x 	 8.01     	 38.06   
+         sad_x4[12x16]	5.78x 	 9.46     	 54.73   
+        copy_pp[12x16]	1.58x 	 4.61     	 7.27    
+         addAvg[12x16]	2.23x 	 7.61     	 17.00   
+ addAvg_aligned[12x16]	2.24x 	 7.60     	 16.99   
+ [i420] copy_pp[  6x8]	1.14x 	 4.16     	 4.75    
+ [i420]  addAvg[  6x8]	1.45x 	 5.00     	 7.25    
+[i420]  addAvg_aligned[  6x8]	1.44x 	 5.00     	 7.21    
+ [i422] copy_pp[ 6x16]	1.22x 	 4.55     	 5.53    
+ [i422]  addAvg[ 6x16]	1.72x 	 6.13     	 10.57   
+[i422]  addAvg_aligned[ 6x16]	1.72x 	 6.15     	 10.61   
+           satd[32x32]	4.33x 	 16.68    	 72.25   
+         avg_pp[32x32]	3.94x 	 7.65     	 30.13   
+ avg_pp_aligned[32x32]	3.93x 	 7.66     	 30.09   
+            sad[32x32]	2.47x 	 8.37     	 20.65   
+         sad_x3[32x32]	11.25x 	 17.66    	 198.60  
+         sad_x4[32x32]	11.88x 	 21.98    	 261.18  
+        copy_pp[32x32]	1.56x 	 5.50     	 8.57    
+         addAvg[32x32]	1.69x 	 19.01    	 32.18   
+ addAvg_aligned[32x32]	1.69x 	 19.02    	 32.15   
+         sse_pp[32x32]	2.07x 	 11.01    	 22.77   
+         sse_ss[32x32]	1.63x 	 13.17    	 21.50   
+         sub_ps[32x32]	2.03x 	 9.41     	 19.10   
+         add_ps[32x32]	2.54x 	 12.07    	 30.72   
+ add_ps_aligned[32x32]	2.53x 	 12.10    	 30.59   
+        copy_ss[32x32]	1.54x 	 8.19     	 12.63   
+        copy_sp[32x32]	1.54x 	 8.17     	 12.61   
+        copy_ps[32x32]	1.59x 	 8.24     	 13.13   
+ [i420] copy_pp[16x16]	1.87x 	 4.51     	 8.42    
+ [i420]  addAvg[16x16]	2.69x 	 7.89     	 21.23   
+[i420]  addAvg_aligned[16x16]	2.72x 	 7.90     	 21.46   
+    [i420] satd[16x16]	2.99x 	 7.02     	 21.00   
+ [i420] copy_ss[16x16]	1.71x 	 4.93     	 8.44    
+ [i420] copy_ps[16x16]	1.71x 	 4.90     	 8.38    
+ [i420] copy_sp[16x16]	1.72x 	 4.90     	 8.45    
+ [i420]  sub_ps[16x16]	2.41x 	 5.27     	 12.70   
+ [i420]  add_ps[16x16]	2.48x 	 5.99     	 14.85   
+[i420]  add_ps_aligned[16x16]	2.46x 	 6.03     	 14.85   
+ [i422] copy_pp[16x32]	2.58x 	 4.99     	 12.87   
+ [i422]  addAvg[16x32]	3.28x 	 11.78    	 38.66   
+[i422]  addAvg_aligned[16x32]	3.27x 	 11.79    	 38.58   
+    [i422] satd[16x32]	3.76x 	 10.15    	 38.13   
+ [i422] copy_ss[16x32]	2.15x 	 5.98     	 12.88   
+ [i422] copy_ps[16x32]	2.14x 	 6.01     	 12.87   
+ [i422] copy_sp[16x32]	2.11x 	 6.06     	 12.79   
+ [i422]  sub_ps[16x32]	3.21x 	 6.64     	 21.34   
+ [i422]  add_ps[16x32]	3.19x 	 8.10     	 25.80   
+[i422]  add_ps_aligned[16x32]	3.17x 	 8.12     	 25.75   
+    [i422] sa8d[16x32]	3.63x 	 13.04    	 47.28   
+           satd[32x16]	3.66x 	 10.34    	 37.84   
+         avg_pp[32x16]	2.99x 	 5.75     	 17.15   
+ avg_pp_aligned[32x16]	3.00x 	 5.72     	 17.15   
+            sad[32x16]	1.98x 	 6.19     	 12.26   
+         sad_x3[32x16]	9.32x 	 10.88    	 101.37  
+         sad_x4[32x16]	10.23x 	 12.98    	 132.74  
+        copy_pp[32x16]	1.38x 	 4.64     	 6.39    
+         addAvg[32x16]	1.58x 	 11.52    	 18.23   
+ addAvg_aligned[32x16]	1.58x 	 11.52    	 18.17   
+ [i420] copy_pp[ 16x8]	1.49x 	 4.12     	 6.15    
+ [i420]  addAvg[ 16x8]	2.14x 	 5.86     	 12.56   
+[i420]  addAvg_aligned[ 16x8]	2.15x 	 5.86     	 12.62   
+    [i420] satd[ 16x8]	2.27x 	 5.48     	 12.44   
+ [i422] copy_pp[16x16]	1.87x 	 4.52     	 8.45    
+ [i422]  addAvg[16x16]	2.69x 	 7.88     	 21.18   
+[i422]  addAvg_aligned[16x16]	2.70x 	 7.91     	 21.36   
+    [i422] satd[16x16]	2.99x 	 7.04     	 21.06   
+           satd[16x32]	3.75x 	 10.15    	 38.08   
+         avg_pp[16x32]	5.70x 	 6.03     	 34.32   
+ avg_pp_aligned[16x32]	5.69x 	 6.03     	 34.32   
+            sad[16x32]	1.68x 	 6.33     	 10.67   
+         sad_x3[16x32]	9.56x 	 10.90    	 104.23  
+         sad_x4[16x32]	10.48x 	 13.05    	 136.77  
+        copy_pp[16x32]	2.58x 	 4.95     	 12.79   
+         addAvg[16x32]	3.26x 	 11.83    	 38.54   
+ addAvg_aligned[16x32]	3.26x 	 11.83    	 38.62   
+ [i420] copy_pp[ 8x16]	1.42x 	 4.25     	 6.03    
+ [i420]  addAvg[ 8x16]	2.18x 	 5.88     	 12.80   
+[i420]  addAvg_aligned[ 8x16]	2.17x 	 5.88     	 12.77   
+    [i420] satd[ 8x16]	2.22x 	 5.68     	 12.59   
+ [i422] copy_pp[ 8x32]	1.84x 	 4.64     	 8.56    
+ [i422]  addAvg[ 8x32]	2.72x 	 7.88     	 21.41   
+[i422]  addAvg_aligned[ 8x32]	2.72x 	 7.89     	 21.45   
+    [i422] satd[ 8x32]	2.87x 	 7.39     	 21.21   
+           satd[ 32x8]	2.94x 	 7.14     	 20.98   
+         avg_pp[ 32x8]	2.19x 	 4.81     	 10.56   
+ avg_pp_aligned[ 32x8]	2.19x 	 4.82     	 10.57   
+            sad[ 32x8]	1.59x 	 5.05     	 8.03    
+         sad_x3[ 32x8]	7.06x 	 7.46     	 52.70   
+         sad_x4[ 32x8]	7.96x 	 8.59     	 68.38   
+        copy_pp[ 32x8]	1.24x 	 4.21     	 5.22    
+         addAvg[ 32x8]	1.44x 	 7.69     	 11.07   
+ addAvg_aligned[ 32x8]	1.45x 	 7.68     	 11.10   
+ [i420] copy_pp[ 16x4]	1.25x 	 3.97     	 4.97    
+ [i420]  addAvg[ 16x4]	1.69x 	 4.85     	 8.21    
+[i420]  addAvg_aligned[ 16x4]	1.71x 	 4.85     	 8.27    
+    [i420] satd[ 16x4]	1.74x 	 4.68     	 8.15    
+ [i422] copy_pp[ 16x8]	1.47x 	 4.11     	 6.04    
+ [i422]  addAvg[ 16x8]	2.15x 	 5.87     	 12.61   
+[i422]  addAvg_aligned[ 16x8]	2.14x 	 5.86     	 12.56   
+    [i422] satd[ 16x8]	2.30x 	 5.44     	 12.53   
+           satd[32x24]	4.05x 	 13.60    	 55.11   
+         avg_pp[32x24]	3.54x 	 6.66     	 23.57   
+ avg_pp_aligned[32x24]	3.54x 	 6.68     	 23.62   
+            sad[32x24]	2.28x 	 7.34     	 16.71   
+         sad_x3[32x24]	10.50x 	 14.29    	 150.03  
+         sad_x4[32x24]	11.24x 	 17.52    	 196.96  
+        copy_pp[32x24]	1.47x 	 5.09     	 7.51    
+         addAvg[32x24]	1.65x 	 15.28    	 25.22   
+ addAvg_aligned[32x24]	1.66x 	 15.26    	 25.29   
+ [i420] copy_pp[16x12]	1.71x 	 4.25     	 7.27    
+ [i420]  addAvg[16x12]	2.46x 	 6.91     	 17.00   
+[i420]  addAvg_aligned[16x12]	2.46x 	 6.91     	 17.00   
+    [i420] satd[16x12]	2.68x 	 6.25     	 16.73   
+ [i422] copy_pp[16x24]	2.29x 	 4.66     	 10.66   
+ [i422]  addAvg[16x24]	3.05x 	 9.82     	 29.93   
+[i422]  addAvg_aligned[16x24]	3.06x 	 9.81     	 30.02   
+    [i422] satd[16x24]	3.46x 	 8.56     	 29.59   
+           satd[ 8x32]	2.84x 	 7.44     	 21.14   
+         avg_pp[ 8x32]	3.50x 	 5.51     	 19.27   
+ avg_pp_aligned[ 8x32]	3.52x 	 5.47     	 19.29   
+            sad[ 8x32]	1.37x 	 5.49     	 7.51    
+         sad_x3[ 8x32]	6.74x 	 7.33     	 49.39   
+         sad_x4[ 8x32]	7.71x 	 8.40     	 64.78   
+        copy_pp[ 8x32]	1.85x 	 4.62     	 8.53    
+         addAvg[ 8x32]	2.73x 	 7.91     	 21.55   
+ addAvg_aligned[ 8x32]	2.71x 	 7.88     	 21.39   
+ [i420] copy_pp[ 4x16]	1.17x 	 4.25     	 4.99    
+ [i420]  addAvg[ 4x16]	1.57x 	 5.44     	 8.51    
+[i420]  addAvg_aligned[ 4x16]	1.55x 	 5.43     	 8.43    
+    [i420] satd[ 4x16]	1.84x 	 5.08     	 9.35    
+ [i422] copy_pp[ 4x32]	1.39x 	 4.63     	 6.45    
+ [i422]  addAvg[ 4x32]	1.84x 	 6.97     	 12.85   
+[i422]  addAvg_aligned[ 4x32]	1.84x 	 6.96     	 12.81   
+    [i422] satd[ 4x32]	2.35x 	 6.28     	 14.74   
+           satd[24x32]	3.70x 	 14.90    	 55.11   
+         avg_pp[24x32]	4.45x 	 7.13     	 31.69   
+ avg_pp_aligned[24x32]	4.45x 	 7.11     	 31.64   
+            sad[24x32]	2.63x 	 8.16     	 21.47   
+         sad_x3[24x32]	10.60x 	 14.29    	 151.44  
+         sad_x4[24x32]	11.30x 	 17.61    	 198.99  
+        copy_pp[24x32]	1.95x 	 5.21     	 10.14   
+         addAvg[24x32]	2.43x 	 15.02    	 36.54   
+ addAvg_aligned[24x32]	2.42x 	 15.01    	 36.39   
+ [i420] copy_pp[12x16]	1.57x 	 4.68     	 7.36    
+ [i420]  addAvg[12x16]	2.25x 	 7.60     	 17.07   
+[i420]  addAvg_aligned[12x16]	2.23x 	 7.62     	 16.98   
+    [i420] satd[12x16]	2.58x 	 7.77     	 20.07   
+ [i422] copy_pp[12x32]	1.95x 	 5.52     	 10.75   
+ [i422]  addAvg[12x32]	2.67x 	 11.22    	 30.01   
+[i422]  addAvg_aligned[12x32]	2.67x 	 11.24    	 30.05   
+    [i422] satd[12x32]	3.12x 	 11.58    	 36.16   
+           satd[64x64]	4.99x 	 55.10    	 274.99  
+         avg_pp[64x64]	4.75x 	 21.22    	 100.75  
+ avg_pp_aligned[64x64]	4.71x 	 21.32    	 100.53  
+            sad[64x64]	3.05x 	 21.32    	 65.09   
+         sad_x3[64x64]	13.15x 	 58.46    	 768.62  
+         sad_x4[64x64]	13.45x 	 75.42    	 1014.33 
+        copy_pp[64x64]	1.57x 	 12.74    	 20.07   
+         addAvg[64x64]	1.76x 	 64.37    	 113.14  
+ addAvg_aligned[64x64]	1.76x 	 64.29    	 113.16  
+         sse_pp[64x64]	2.30x 	 32.04    	 73.66   
+         sse_ss[64x64]	1.72x 	 40.78    	 70.01   
+         sub_ps[64x64]	1.92x 	 27.92    	 53.59   
+         add_ps[64x64]	2.78x 	 36.95    	 102.73  
+ add_ps_aligned[64x64]	2.77x 	 37.08    	 102.66  
+        copy_ss[64x64]	1.28x 	 23.66    	 30.27   
+        copy_sp[64x64]	1.39x 	 21.65    	 30.17   
+        copy_ps[64x64]	1.51x 	 21.46    	 32.43   
+ [i420] copy_pp[32x32]	1.55x 	 5.56     	 8.63    
+ [i420]  addAvg[32x32]	1.70x 	 19.02    	 32.28   
+[i420]  addAvg_aligned[32x32]	1.68x 	 19.03    	 32.06   
+    [i420] satd[32x32]	4.31x 	 16.71    	 72.06   
+ [i420] copy_ss[32x32]	1.55x 	 8.19     	 12.69   
+ [i420] copy_ps[32x32]	1.61x 	 8.15     	 13.13   
+ [i420] copy_sp[32x32]	1.55x 	 8.15     	 12.60   
+ [i420]  sub_ps[32x32]	2.02x 	 9.42     	 19.04   
+ [i420]  add_ps[32x32]	2.53x 	 12.06    	 30.55   
+[i420]  add_ps_aligned[32x32]	2.55x 	 12.06    	 30.75   
+ [i422] copy_pp[32x64]	1.83x 	 7.23     	 13.22   
+ [i422]  addAvg[32x64]	1.77x 	 34.11    	 60.48   
+[i422]  addAvg_aligned[32x64]	1.77x 	 34.12    	 60.49   
+    [i422] satd[32x64]	4.74x 	 29.50    	 139.77  
+ [i422] copy_ss[32x64]	1.69x 	 12.63    	 21.36   
+ [i422] copy_ps[32x64]	1.77x 	 12.56    	 22.25   
+ [i422] copy_sp[32x64]	1.65x 	 12.76    	 21.07   
+ [i422]  sub_ps[32x64]	2.25x 	 14.82    	 33.39   
+ [i422]  add_ps[32x64]	2.81x 	 20.44    	 57.39   
+[i422]  add_ps_aligned[32x64]	2.82x 	 20.39    	 57.41   
+    [i422] sa8d[32x64]	5.34x 	 40.50    	 216.20  
+           satd[64x32]	4.73x 	 29.52    	 139.58  
+         avg_pp[64x32]	4.15x 	 12.59    	 52.28   
+ avg_pp_aligned[64x32]	4.14x 	 12.60    	 52.23   
+            sad[64x32]	2.72x 	 12.67    	 34.53   
+         sad_x3[64x32]	12.36x 	 31.26    	 386.41  
+         sad_x4[64x32]	12.79x 	 39.80    	 509.27  
+        copy_pp[64x32]	1.49x 	 8.24     	 12.30   
+         addAvg[64x32]	1.71x 	 34.18    	 58.55   
+ addAvg_aligned[64x32]	1.71x 	 34.20    	 58.64   
+ [i420] copy_pp[32x16]	1.36x 	 4.71     	 6.42    
+ [i420]  addAvg[32x16]	1.57x 	 11.52    	 18.14   
+[i420]  addAvg_aligned[32x16]	1.58x 	 11.50    	 18.18   
+    [i420] satd[32x16]	3.67x 	 10.32    	 37.88   
+ [i422] copy_pp[32x32]	1.53x 	 5.58     	 8.54    
+ [i422]  addAvg[32x32]	1.70x 	 19.03    	 32.27   
+[i422]  addAvg_aligned[32x32]	1.69x 	 19.03    	 32.18   
+    [i422] satd[32x32]	4.31x 	 16.70    	 71.94   
+           satd[32x64]	4.73x 	 29.53    	 139.79  
+         avg_pp[32x64]	4.88x 	 11.49    	 56.14   
+ avg_pp_aligned[32x64]	4.89x 	 11.50    	 56.20   
+            sad[32x64]	2.93x 	 12.69    	 37.18   
+         sad_x3[32x64]	12.56x 	 31.30    	 393.18  
+         sad_x4[32x64]	13.00x 	 39.86    	 518.15  
+        copy_pp[32x64]	1.84x 	 7.19     	 13.19   
+         addAvg[32x64]	1.78x 	 33.91    	 60.48   
+ addAvg_aligned[32x64]	1.77x 	 34.16    	 60.48   
+ [i420] copy_pp[16x32]	2.58x 	 5.00     	 12.89   
+ [i420]  addAvg[16x32]	3.26x 	 11.82    	 38.60   
+[i420]  addAvg_aligned[16x32]	3.27x 	 11.82    	 38.63   
+    [i420] satd[16x32]	3.77x 	 10.13    	 38.16   
+ [i422] copy_pp[16x64]	3.53x 	 6.15     	 21.75   
+ [i422]  addAvg[16x64]	3.74x 	 19.60    	 73.29   
+[i422]  addAvg_aligned[16x64]	3.74x 	 19.61    	 73.24   
+    [i422] satd[16x64]	4.38x 	 16.50    	 72.29   
+           satd[64x16]	4.27x 	 16.79    	 71.68   
+         avg_pp[64x16]	3.43x 	 8.24     	 28.24   
+ avg_pp_aligned[64x16]	3.43x 	 8.23     	 28.24   
+            sad[64x16]	2.31x 	 8.35     	 19.33   
+         sad_x3[64x16]	11.07x 	 17.65    	 195.33  
+         sad_x4[64x16]	11.70x 	 21.96    	 256.86  
+        copy_pp[64x16]	1.33x 	 6.02     	 8.03    
+         addAvg[64x16]	1.64x 	 19.14    	 31.33   
+ addAvg_aligned[64x16]	1.65x 	 19.14    	 31.56   
+ [i420] copy_pp[ 32x8]	1.23x 	 4.25     	 5.24    
+ [i420]  addAvg[ 32x8]	1.45x 	 7.67     	 11.15   
+[i420]  addAvg_aligned[ 32x8]	1.44x 	 7.70     	 11.11   
+    [i420] satd[ 32x8]	2.93x 	 7.17     	 21.02   
+ [i422] copy_pp[32x16]	1.35x 	 4.71     	 6.38    
+ [i422]  addAvg[32x16]	1.58x 	 11.50    	 18.21   
+[i422]  addAvg_aligned[32x16]	1.58x 	 11.52    	 18.20   
+    [i422] satd[32x16]	3.66x 	 10.31    	 37.76   
+           satd[64x48]	4.90x 	 42.29    	 207.31  
+         avg_pp[64x48]	4.54x 	 16.83    	 76.47   
+ avg_pp_aligned[64x48]	4.52x 	 16.91    	 76.48   
+            sad[64x48]	2.94x 	 16.97    	 49.94   
+         sad_x3[64x48]	12.88x 	 44.83    	 577.54  
+         sad_x4[64x48]	13.21x 	 57.67    	 761.91  
+        copy_pp[64x48]	1.54x 	 10.51    	 16.14   
+         addAvg[64x48]	1.74x 	 49.34    	 85.99   
+ addAvg_aligned[64x48]	1.74x 	 49.29    	 85.95   
+ [i420] copy_pp[32x24]	1.46x 	 5.18     	 7.57    
+ [i420]  addAvg[32x24]	1.66x 	 15.27    	 25.29   
+[i420]  addAvg_aligned[32x24]	1.66x 	 15.27    	 25.30   
+    [i420] satd[32x24]	4.05x 	 13.59    	 55.09   
+ [i422] copy_pp[32x48]	1.72x 	 6.37     	 10.98   
+ [i422]  addAvg[32x48]	1.75x 	 26.54    	 46.45   
+[i422]  addAvg_aligned[32x48]	1.75x 	 26.57    	 46.44   
+    [i422] satd[32x48]	4.59x 	 23.08    	 105.95  
+           satd[16x64]	4.36x 	 16.54    	 72.13   
+         avg_pp[16x64]	7.77x 	 8.32     	 64.70   
+ avg_pp_aligned[16x64]	7.77x 	 8.32     	 64.64   
+            sad[16x64]	2.04x 	 8.55     	 17.42   
+         sad_x3[16x64]	11.54x 	 17.71    	 204.34  
+         sad_x4[16x64]	12.19x 	 22.10    	 269.41  
+        copy_pp[16x64]	3.56x 	 6.07     	 21.64   
+         addAvg[16x64]	3.74x 	 19.60    	 73.39   
+ addAvg_aligned[16x64]	3.73x 	 19.60    	 73.20   
+ [i420] copy_pp[ 8x32]	1.86x 	 4.64     	 8.61    
+ [i420]  addAvg[ 8x32]	2.72x 	 7.88     	 21.46   
+[i420]  addAvg_aligned[ 8x32]	2.73x 	 7.88     	 21.48   
+    [i420] satd[ 8x32]	2.84x 	 7.43     	 21.10   
+ [i422] copy_pp[ 8x64]	2.39x 	 5.49     	 13.10   
+ [i422]  addAvg[ 8x64]	3.31x 	 11.81    	 39.06   
+[i422]  addAvg_aligned[ 8x64]	3.29x 	 11.82    	 38.94   
+    [i422] satd[ 8x64]	3.52x 	 10.94    	 38.45   
+           satd[48x64]	4.93x 	 42.07    	 207.38  
+         avg_pp[48x64]	4.46x 	 17.98    	 80.20   
+ avg_pp_aligned[48x64]	4.48x 	 17.97    	 80.41   
+            sad[48x64]	2.56x 	 19.36    	 49.55   
+         sad_x3[48x64]	12.97x 	 44.88    	 581.92  
+         sad_x4[48x64]	13.30x 	 57.67    	 767.15  
+        copy_pp[48x64]	1.65x 	 10.94    	 18.11   
+         addAvg[48x64]	1.75x 	 49.82    	 87.05   
+ addAvg_aligned[48x64]	1.75x 	 49.81    	 87.00   
+ [i420] copy_pp[24x32]	1.93x 	 5.27     	 10.18   
+ [i420]  addAvg[24x32]	2.43x 	 15.01    	 36.49   
+[i420]  addAvg_aligned[24x32]	2.41x 	 15.01    	 36.20   
+    [i420] satd[24x32]	3.71x 	 14.88    	 55.18   
+ [i422] copy_pp[24x64]	2.47x 	 6.62     	 16.38   
+ [i422]  addAvg[24x64]	2.63x 	 26.04    	 68.59   
+[i422]  addAvg_aligned[24x64]	2.62x 	 26.16    	 68.57   
+    [i422] satd[24x64]	4.10x 	 25.85    	 106.07  
+            ssd_s[4x4]	1.10x 	 3.96     	 4.34    
+    ssd_s_aligned[4x4]	1.12x 	 3.89     	 4.34    
+             sa8d[4x4]	1.23x 	 4.13     	 5.07    
+         residual[4x4]	1.10x 	 3.97     	 4.38    
+ residual_aligned[4x4]	1.11x 	 3.94     	 4.39    
+          blkfill[4x4]	0.99x 	 3.82     	 3.78    
+  blkfill_aligned[4x4]	0.99x 	 3.81     	 3.79    
+    cpy2Dto1D_shr[4x4]	1.13x 	 3.97     	 4.49    
+         copy_cnt[4x4]	1.09x 	 4.06     	 4.44    
+      psy_cost_pp[4x4]	1.56x 	 4.31     	 6.71    
+            ssd_s[8x8]	1.30x 	 4.24     	 5.50    
+    ssd_s_aligned[8x8]	1.30x 	 4.25     	 5.54    
+             sa8d[8x8]	1.87x 	 4.96     	 9.26    
+         residual[8x8]	1.47x 	 4.10     	 6.02    
+ residual_aligned[8x8]	1.45x 	 4.15     	 6.03    
+          blkfill[8x8]	1.03x 	 3.88     	 4.00    
+  blkfill_aligned[8x8]	1.01x 	 3.89     	 3.95    
+              var[8x8]	1.51x 	 4.31     	 6.52    
+    cpy2Dto1D_shr[8x8]	1.55x 	 4.29     	 6.65    
+         copy_cnt[8x8]	1.34x 	 4.44     	 5.94    
+      psy_cost_pp[8x8]	2.24x 	 6.28     	 14.08   
+          ssd_s[16x16]	1.83x 	 5.51     	 10.11   
+  ssd_s_aligned[16x16]	1.84x 	 5.51     	 10.13   
+           sa8d[16x16]	3.06x 	 8.34     	 25.48   
+       residual[16x16]	2.45x 	 5.18     	 12.71   
+residual_aligned[16x16]	2.45x 	 5.19     	 12.71   
+        blkfill[16x16]	1.06x 	 4.31     	 4.57    
+blkfill_aligned[16x16]	1.07x 	 4.26     	 4.56    
+            var[16x16]	2.34x 	 5.43     	 12.70   
+  cpy2Dto1D_shr[16x16]	2.78x 	 5.38     	 14.93   
+       copy_cnt[16x16]	1.94x 	 5.79     	 11.25   
+          ssd_s[32x32]	1.46x 	 10.41    	 15.21   
+  ssd_s_aligned[32x32]	1.46x 	 10.42    	 15.21   
+           sa8d[32x32]	4.83x 	 22.07    	 106.50  
+       residual[32x32]	1.96x 	 9.19     	 17.97   
+residual_aligned[32x32]	1.95x 	 9.28     	 18.05   
+        blkfill[32x32]	1.72x 	 5.90     	 10.12   
+blkfill_aligned[32x32]	1.71x 	 5.90     	 10.10   
+            var[32x32]	2.30x 	 9.36     	 21.51   
+  cpy2Dto1D_shr[32x32]	2.10x 	 10.58    	 22.25   
+       copy_cnt[32x32]	2.31x 	 11.99    	 27.70   
+           sa8d[64x64]	5.43x 	 76.94    	 417.57  
+            var[64x64]	2.47x 	 25.71    	 63.58   
+       scale1D_128to64	2.78x 	 4.32     	 11.99   
+scale1D_128to64_aligned	2.78x 	 4.32     	 12.02   
+        scale2D_64to32	8.29x 	 14.52    	 120.30  
+       ssim_4x4x2_core	1.81x 	 4.42     	 8.00    
+          planecopy_cp	2.84x 	 21.58    	 61.36   
+== transforms primitives ==
+dct4x4			1.32x 	 4.42     	 5.83    
+dct8x8			1.56x 	 7.06     	 11.00   
+dct16x16		4.28x 	 19.08    	 81.57   
+dequant_normal		6.62x 	 13.60    	 89.96   
+dequant_scaling		4.92x 	 28.78    	 141.49  
+quant			2.42x 	 81.55    	 197.27  
+nquant			2.22x 	 74.99    	 166.68  
+count_nonzero[4x4]	0.99x 	 4.06     	 4.03    
+count_nonzero[8x8]	1.07x 	 4.24     	 4.56    
+count_nonzero[16x16]	1.41x 	 5.27     	 7.42    
+count_nonzero[32x32]	1.89x 	 9.49     	 17.90   
+== interp primitives ==
+luma_hpp[  4x4]		1.20x 	 6.36     	 7.61    
+luma_hps[  4x4]		1.37x 	 9.65     	 13.26   
+luma_vpp[  4x4]		1.89x 	 4.73     	 8.96    
+luma_vps[  4x4]		1.20x 	 7.08     	 8.48    
+luma_vsp[  4x4]		1.32x 	 7.01     	 9.24    
+convert_p2s[  4x4]		1.14x 	 3.97     	 4.51    
+convert_p2s_aligned[  4x4]		1.17x 	 3.94     	 4.59    
+luma_hpp[  8x8]		1.41x 	 9.03     	 12.76   
+luma_hps[  8x8]		1.59x 	 12.11    	 19.19   
+luma_vpp[  8x8]		1.80x 	 9.83     	 17.73   
+luma_vps[  8x8]		1.58x 	 9.59     	 15.15   
+luma_vsp[  8x8]		1.70x 	 10.36    	 17.62   
+convert_p2s[  8x8]		1.52x 	 4.30     	 6.55    
+convert_p2s_aligned[  8x8]		1.52x 	 4.29     	 6.54    
+luma_hpp[16x16]		1.34x 	 22.77    	 30.54   
+luma_hps[16x16]		1.47x 	 27.54    	 40.52   
+luma_vpp[16x16]		1.38x 	 26.79    	 36.91   
+luma_vps[16x16]		1.35x 	 25.81    	 34.96   
+luma_vsp[16x16]		1.43x 	 28.42    	 40.66   
+convert_p2s[16x16]		2.68x 	 5.46     	 14.65   
+convert_p2s_aligned[16x16]		2.71x 	 5.46     	 14.79   
+luma_hpp[32x32]		2.58x 	 77.44    	 200.19  
+luma_hps[32x32]		1.58x 	 81.82    	 129.12  
+luma_vpp[32x32]		1.53x 	 94.19    	 144.04  
+luma_vps[32x32]		1.47x 	 89.89    	 131.70  
+luma_vsp[32x32]		1.27x 	 99.76    	 126.44  
+convert_p2s[32x32]		1.40x 	 10.02    	 13.99   
+convert_p2s_aligned[32x32]		1.40x 	 10.01    	 14.01   
+luma_hpp[64x64]		2.01x 	 297.60   	 598.98  
+luma_hps[64x64]		1.54x 	 285.19   	 440.11  
+luma_vpp[64x64]		1.19x 	 362.59   	 432.35  
+luma_vps[64x64]		1.11x 	 346.31   	 383.74  
+luma_vsp[64x64]		1.21x 	 384.97   	 466.30  
+convert_p2s[64x64]		1.29x 	 28.24    	 36.46   
+convert_p2s_aligned[64x64]		1.30x 	 28.24    	 36.67   
+luma_hpp[  8x4]		1.32x 	 6.43     	 8.47    
+luma_hps[  8x4]		1.53x 	 9.97     	 15.24   
+luma_vpp[  8x4]		1.56x 	 6.92     	 10.83   
+luma_vps[  8x4]		1.40x 	 6.82     	 9.56    
+luma_vsp[  8x4]		1.43x 	 7.31     	 10.48   
+convert_p2s[  8x4]		1.27x 	 4.07     	 5.17    
+convert_p2s_aligned[  8x4]		1.28x 	 4.06     	 5.22    
+luma_hpp[  4x8]		1.28x 	 8.75     	 11.23   
+luma_hps[  4x8]		1.43x 	 11.67    	 16.74   
+luma_vpp[  4x8]		2.57x 	 5.32     	 13.69   
+luma_vps[  4x8]		1.25x 	 10.29    	 12.90   
+luma_vsp[  4x8]		1.44x 	 10.08    	 14.54   
+convert_p2s[  4x8]		1.20x 	 4.32     	 5.17    
+convert_p2s_aligned[  4x8]		1.21x 	 4.30     	 5.21    
+luma_hpp[ 16x8]		1.29x 	 13.43    	 17.36   
+luma_hps[ 16x8]		1.44x 	 19.34    	 27.94   
+luma_vpp[ 16x8]		1.36x 	 15.44    	 20.99   
+luma_vps[ 16x8]		1.32x 	 14.91    	 19.65   
+luma_vsp[ 16x8]		1.41x 	 16.28    	 23.03   
+convert_p2s[ 16x8]		1.98x 	 4.65     	 9.21    
+convert_p2s_aligned[ 16x8]		1.98x 	 4.66     	 9.24    
+luma_hpp[ 8x16]		1.52x 	 13.96    	 21.19   
+luma_hps[ 8x16]		1.67x 	 16.25    	 27.19   
+luma_vpp[ 8x16]		1.92x 	 15.70    	 30.21   
+luma_vps[ 8x16]		1.68x 	 15.19    	 25.54   
+luma_vsp[ 8x16]		1.97x 	 16.60    	 32.78   
+convert_p2s[ 8x16]		1.94x 	 4.78     	 9.30    
+convert_p2s_aligned[ 8x16]		1.96x 	 4.79     	 9.39    
+luma_hpp[32x16]		2.51x 	 40.72    	 102.14  
+luma_hps[32x16]		1.56x 	 49.90    	 77.84   
+luma_vpp[32x16]		1.51x 	 49.05    	 74.20   
+luma_vps[32x16]		1.45x 	 46.95    	 68.04   
+luma_vsp[32x16]		1.27x 	 51.94    	 65.86   
+convert_p2s[32x16]		1.31x 	 6.93     	 9.07    
+convert_p2s_aligned[32x16]		1.30x 	 6.92     	 9.02    
+luma_hpp[16x32]		1.37x 	 41.46    	 56.67   
+luma_hps[16x32]		1.51x 	 43.73    	 66.04   
+luma_vpp[16x32]		1.40x 	 49.60    	 69.55   
+luma_vps[16x32]		1.38x 	 47.54    	 65.40   
+luma_vsp[16x32]		1.46x 	 52.51    	 76.66   
+convert_p2s[16x32]		3.59x 	 7.09     	 25.46   
+convert_p2s_aligned[16x32]		3.60x 	 7.07     	 25.49   
+luma_hpp[64x32]		2.00x 	 151.25   	 301.86  
+luma_hps[64x32]		1.54x 	 157.94   	 243.04  
+luma_vpp[64x32]		1.19x 	 183.54   	 218.51  
+luma_vps[64x32]		1.11x 	 174.90   	 193.75  
+luma_vsp[64x32]		1.21x 	 194.69   	 235.60  
+convert_p2s[64x32]		1.27x 	 15.95    	 20.19   
+convert_p2s_aligned[64x32]		1.27x 	 15.95    	 20.18   
+luma_hpp[32x64]		2.62x 	 150.69   	 395.02  
+luma_hps[32x64]		1.60x 	 145.64   	 232.34  
+luma_vpp[32x64]		1.54x 	 184.45   	 283.89  
+luma_vps[32x64]		1.47x 	 176.01   	 258.53  
+luma_vsp[32x64]		1.27x 	 195.52   	 248.57  
+convert_p2s[32x64]		1.48x 	 16.35    	 24.26   
+convert_p2s_aligned[32x64]		1.49x 	 16.35    	 24.29   
+luma_hpp[16x12]		1.32x 	 18.16    	 23.92   
+luma_hps[16x12]		1.46x 	 23.48    	 34.27   
+luma_vpp[16x12]		1.36x 	 21.28    	 28.90   
+luma_vps[16x12]		1.34x 	 20.32    	 27.12   
+luma_vsp[16x12]		1.42x 	 22.32    	 31.63   
+convert_p2s[16x12]		2.38x 	 5.04     	 12.01   
+convert_p2s_aligned[16x12]		2.38x 	 5.05     	 12.02   
+luma_hpp[12x16]		1.67x 	 22.40    	 37.43   
+luma_hps[12x16]		1.72x 	 27.00    	 46.53   
+luma_vpp[12x16]		1.93x 	 27.08    	 52.35   
+luma_vps[12x16]		1.84x 	 25.32    	 46.51   
+luma_vsp[12x16]		1.98x 	 28.44    	 56.37   
+convert_p2s[12x16]		2.18x 	 5.51     	 12.01   
+convert_p2s_aligned[12x16]		2.21x 	 5.46     	 12.05   
+luma_hpp[ 16x4]		1.22x 	 8.80     	 10.75   
+luma_hps[ 16x4]		1.42x 	 15.29    	 21.66   
+luma_vpp[ 16x4]		1.29x 	 9.74     	 12.55   
+luma_vps[ 16x4]		1.27x 	 9.47     	 11.99   
+luma_vsp[ 16x4]		1.30x 	 10.24    	 13.32   
+convert_p2s[ 16x4]		1.52x 	 4.24     	 6.46    
+convert_p2s_aligned[ 16x4]		1.55x 	 4.23     	 6.56    
+luma_hpp[ 4x16]		1.40x 	 13.54    	 18.94   
+luma_hps[ 4x16]		1.49x 	 15.74    	 23.47   
+luma_vpp[ 4x16]		3.57x 	 6.63     	 23.68   
+luma_vps[ 4x16]		1.31x 	 16.65    	 21.77   
+luma_vsp[ 4x16]		1.55x 	 16.16    	 25.13   
+convert_p2s[ 4x16]		1.34x 	 4.85     	 6.51    
+convert_p2s_aligned[ 4x16]		1.38x 	 4.80     	 6.61    
+luma_hpp[32x24]		2.55x 	 59.11    	 150.78  
+luma_hps[32x24]		1.58x 	 65.67    	 103.45  
+luma_vpp[32x24]		1.52x 	 71.70    	 109.20  
+luma_vps[32x24]		1.46x 	 68.47    	 99.86   
+luma_vsp[32x24]		1.27x 	 75.87    	 96.07   
+convert_p2s[32x24]		1.35x 	 8.51     	 11.45   
+convert_p2s_aligned[32x24]		1.35x 	 8.52     	 11.48   
+luma_hpp[24x32]		2.06x 	 59.62    	 122.95  
+luma_hps[24x32]		2.21x 	 62.69    	 138.41  
+luma_vpp[24x32]		2.08x 	 72.39    	 150.61  
+luma_vps[24x32]		2.05x 	 70.02    	 143.48  
+luma_vsp[24x32]		2.03x 	 77.90    	 157.79  
+convert_p2s[24x32]		2.07x 	 9.12     	 18.87   
+convert_p2s_aligned[24x32]		1.98x 	 9.22     	 18.25   
+luma_hpp[ 32x8]		2.36x 	 22.45    	 53.06   
+luma_hps[ 32x8]		1.54x 	 33.89    	 52.34   
+luma_vpp[ 32x8]		1.49x 	 26.54    	 39.57   
+luma_vps[ 32x8]		1.42x 	 25.53    	 36.19   
+luma_vsp[ 32x8]		1.28x 	 28.09    	 35.82   
+convert_p2s[ 32x8]		1.23x 	 5.31     	 6.51    
+convert_p2s_aligned[ 32x8]		1.23x 	 5.27     	 6.51    
+luma_hpp[ 8x32]		1.62x 	 23.73    	 38.39   
+luma_hps[ 8x32]		1.75x 	 24.79    	 43.46   
+luma_vpp[ 8x32]		2.07x 	 27.35    	 56.49   
+luma_vps[ 8x32]		1.81x 	 26.34    	 47.66   
+luma_vsp[ 8x32]		2.11x 	 28.93    	 61.16   
+convert_p2s[ 8x32]		2.57x 	 5.72     	 14.66   
+convert_p2s_aligned[ 8x32]		2.57x 	 5.71     	 14.70   
+luma_hpp[64x48]		2.01x 	 224.72   	 450.58  
+luma_hps[64x48]		1.54x 	 221.22   	 340.98  
+luma_vpp[64x48]		1.19x 	 273.42   	 325.91  
+luma_vps[64x48]		1.11x 	 260.63   	 288.33  
+luma_vsp[64x48]		1.21x 	 289.83   	 351.12  
+convert_p2s[64x48]		1.29x 	 21.91    	 28.19   
+convert_p2s_aligned[64x48]		1.29x 	 21.94    	 28.26   
+luma_hpp[48x64]		2.26x 	 222.68   	 504.29  
+luma_hps[48x64]		1.59x 	 215.12   	 341.05  
+luma_vpp[48x64]		1.25x 	 273.54   	 343.11  
+luma_vps[48x64]		1.16x 	 260.85   	 303.85  
+luma_vsp[48x64]		1.27x 	 290.16   	 367.96  
+convert_p2s[48x64]		1.34x 	 22.81    	 30.67   
+convert_p2s_aligned[48x64]		1.34x 	 22.80    	 30.63   
+luma_hpp[64x16]		1.96x 	 77.85    	 152.89  
+luma_hps[64x16]		1.53x 	 94.83    	 145.04  
+luma_vpp[64x16]		1.19x 	 93.69    	 111.41  
+luma_vps[64x16]		1.11x 	 89.41    	 99.20   
+luma_vsp[64x16]		1.21x 	 100.22   	 121.66  
+convert_p2s[64x16]		1.22x 	 9.96     	 12.16   
+convert_p2s_aligned[64x16]		1.27x 	 10.12    	 12.82   
+luma_hpp[16x64]		1.39x 	 80.69    	 112.52  
+luma_hps[16x64]		1.49x 	 78.99    	 117.58  
+luma_vpp[16x64]		1.41x 	 95.29    	 134.73  
+luma_vps[16x64]		1.39x 	 91.24    	 126.40  
+luma_vsp[16x64]		1.46x 	 101.10   	 148.02  
+convert_p2s[16x64]		4.44x 	 10.62    	 47.12   
+convert_p2s_aligned[16x64]		4.44x 	 10.63    	 47.21   
+= Color Space i420 =
+chroma_hpp[  4x4]	1.14x 	 5.75     	 6.57    
+chroma_hps[  4x4]	1.15x 	 6.46     	 7.43    
+chroma_hpp[  8x8]	1.71x 	 7.66     	 13.08   
+chroma_hps[  8x8]	1.80x 	 8.14     	 14.63   
+chroma_vpp[  8x8]	1.64x 	 7.82     	 12.85   
+chroma_vps[  8x8]	1.50x 	 7.54     	 11.32   
+chroma_vsp[  8x8]	1.88x 	 8.30     	 15.60   
+chroma_hpp[16x16]	0.98x 	 17.24    	 16.90   
+chroma_hps[16x16]	1.14x 	 16.82    	 19.19   
+chroma_vpp[16x16]	1.08x 	 18.38    	 19.83   
+chroma_vps[16x16]	0.99x 	 17.29    	 17.17   
+chroma_vsp[16x16]	1.06x 	 20.05    	 21.29   
+chroma_hpp[32x32]	2.06x 	 54.96    	 112.96  
+chroma_hps[32x32]	1.15x 	 49.19    	 56.73   
+chroma_vpp[32x32]	1.16x 	 59.94    	 69.76   
+chroma_vps[32x32]	1.00x 	 55.67    	 55.81   
+chroma_vsp[32x32]	1.03x 	 66.41    	 68.42   
+chroma_hpp[  4x2]	1.04x 	 4.93     	 5.12    
+chroma_hps[  4x2]	1.10x 	 5.82     	 6.39    
+chroma_hpp[  8x4]	1.44x 	 5.90     	 8.51    
+chroma_hps[  8x4]	1.56x 	 6.82     	 10.67   
+chroma_vpp[  8x4]	1.39x 	 6.00     	 8.32    
+chroma_vps[  8x4]	1.30x 	 5.85     	 7.58    
+chroma_vsp[  8x4]	1.67x 	 6.15     	 10.29   
+chroma_hpp[  4x8]	1.15x 	 7.54     	 8.66    
+chroma_hps[  4x8]	1.21x 	 7.85     	 9.46    
+chroma_hpp[ 16x8]	0.99x 	 10.70    	 10.59   
+chroma_hps[ 16x8]	1.11x 	 11.55    	 12.81   
+chroma_vpp[ 16x8]	1.08x 	 11.22    	 12.06   
+chroma_vps[ 16x8]	0.99x 	 10.76    	 10.69   
+chroma_vsp[ 16x8]	1.03x 	 12.11    	 12.42   
+chroma_hpp[ 8x16]	2.01x 	 11.17    	 22.42   
+chroma_hps[ 8x16]	2.03x 	 10.95    	 22.25   
+chroma_vpp[ 8x16]	1.88x 	 11.53    	 21.66   
+chroma_vps[ 8x16]	1.67x 	 11.01    	 18.36   
+chroma_vsp[ 8x16]	2.27x 	 12.38    	 28.13   
+chroma_hpp[32x16]	1.98x 	 29.55    	 58.43   
+chroma_hps[32x16]	1.14x 	 28.69    	 32.69   
+chroma_vpp[32x16]	1.16x 	 32.04    	 37.02   
+chroma_vps[32x16]	1.01x 	 29.95    	 30.23   
+chroma_vsp[32x16]	1.03x 	 35.31    	 36.25   
+chroma_hpp[16x32]	0.98x 	 30.47    	 29.88   
+chroma_hps[16x32]	1.17x 	 27.53    	 32.09   
+chroma_vpp[16x32]	1.09x 	 32.97    	 35.80   
+chroma_vps[16x32]	1.00x 	 30.92    	 30.99   
+chroma_vsp[16x32]	1.07x 	 36.41    	 38.94   
+chroma_hpp[  8x6]	1.58x 	 6.91     	 10.92   
+chroma_hps[  8x6]	1.72x 	 7.54     	 12.99   
+chroma_vpp[  8x6]	1.52x 	 7.09     	 10.76   
+chroma_vps[  8x6]	1.45x 	 6.82     	 9.88    
+chroma_vsp[  8x6]	1.68x 	 8.11     	 13.60   
+chroma_hpp[  8x2]	1.30x 	 5.01     	 6.51    
+chroma_hps[  8x2]	1.45x 	 6.07     	 8.81    
+chroma_vpp[  8x2]	1.24x 	 5.03     	 6.25    
+chroma_vps[  8x2]	1.20x 	 5.04     	 6.04    
+chroma_vsp[  8x2]	1.43x 	 5.18     	 7.41    
+chroma_hpp[16x12]	0.98x 	 14.04    	 13.76   
+chroma_hps[16x12]	1.12x 	 14.19    	 15.87   
+chroma_vpp[16x12]	1.07x 	 14.82    	 15.92   
+chroma_vps[16x12]	0.99x 	 14.02    	 13.94   
+chroma_vsp[16x12]	1.06x 	 16.05    	 17.05   
+chroma_hpp[12x16]	1.39x 	 16.85    	 23.40   
+chroma_hps[12x16]	1.90x 	 16.24    	 30.85   
+chroma_hpp[ 16x4]	0.99x 	 7.47     	 7.41    
+chroma_hps[ 16x4]	1.08x 	 8.97     	 9.68    
+chroma_vpp[ 16x4]	1.07x 	 7.70     	 8.23    
+chroma_vps[ 16x4]	1.01x 	 7.45     	 7.54    
+chroma_vsp[ 16x4]	1.07x 	 8.14     	 8.68    
+chroma_hpp[ 4x16]	1.26x 	 10.76    	 13.53   
+chroma_hps[ 4x16]	1.28x 	 10.46    	 13.43   
+chroma_hpp[32x24]	2.03x 	 42.21    	 85.69   
+chroma_hps[32x24]	1.15x 	 38.87    	 44.73   
+chroma_vpp[32x24]	1.16x 	 46.01    	 53.31   
+chroma_vps[32x24]	1.00x 	 42.82    	 42.83   
+chroma_vsp[32x24]	1.02x 	 50.88    	 52.13   
+chroma_hpp[24x32]	1.56x 	 42.61    	 66.30   
+chroma_hps[24x32]	1.79x 	 38.30    	 68.74   
+chroma_vpp[24x32]	1.59x 	 46.32    	 73.58   
+chroma_vps[24x32]	1.55x 	 43.05    	 66.65   
+chroma_vsp[24x32]	1.65x 	 51.13    	 84.13   
+chroma_hpp[ 32x8]	1.87x 	 16.87    	 31.47   
+chroma_hps[ 32x8]	1.12x 	 18.42    	 20.68   
+chroma_vpp[ 32x8]	1.14x 	 18.12    	 20.66   
+chroma_vps[ 32x8]	1.01x 	 17.00    	 17.21   
+chroma_vsp[ 32x8]	1.06x 	 19.75    	 20.94   
+chroma_hpp[ 8x32]	2.26x 	 18.14    	 40.94   
+chroma_hps[ 8x32]	2.28x 	 16.60    	 37.84   
+chroma_vpp[ 8x32]	2.10x 	 18.95    	 39.70   
+chroma_vps[ 8x32]	1.84x 	 17.84    	 32.84   
+chroma_vsp[ 8x32]	2.55x 	 20.50    	 52.36   
+= Color Space i422 =
+chroma_hpp[  4x8]	1.15x 	 7.55     	 8.71    
+chroma_hps[  4x8]	1.20x 	 7.85     	 9.45    
+chroma_hpp[ 8x16]	2.01x 	 11.14    	 22.42   
+chroma_hps[ 8x16]	2.03x 	 10.96    	 22.20   
+chroma_vpp[ 8x16]	1.87x 	 11.55    	 21.65   
+chroma_vps[ 8x16]	1.67x 	 10.99    	 18.32   
+chroma_vsp[ 8x16]	2.28x 	 12.34    	 28.17   
+chroma_hpp[16x32]	0.99x 	 30.26    	 29.81   
+chroma_hps[16x32]	1.16x 	 27.47    	 31.80   
+chroma_vpp[16x32]	1.09x 	 32.57    	 35.48   
+chroma_vps[16x32]	1.00x 	 30.46    	 30.32   
+chroma_vsp[16x32]	1.06x 	 35.84    	 38.00   
+chroma_hpp[32x64]	2.10x 	 105.66   	 221.65  
+chroma_hps[32x64]	1.16x 	 90.52    	 104.63  
+chroma_vpp[32x64]	1.17x 	 115.76   	 135.12  
+chroma_vps[32x64]	1.01x 	 107.52   	 108.22  
+chroma_vsp[32x64]	1.02x 	 128.98   	 131.89  
+chroma_hpp[  4x4]	1.10x 	 5.74     	 6.31    
+chroma_hps[  4x4]	1.15x 	 6.43     	 7.40    
+chroma_hpp[  8x8]	1.71x 	 7.66     	 13.13   
+chroma_hps[  8x8]	1.79x 	 8.13     	 14.55   
+chroma_vpp[  8x8]	1.64x 	 7.78     	 12.78   
+chroma_vps[  8x8]	1.49x 	 7.57     	 11.30   
+chroma_vsp[  8x8]	1.92x 	 8.29     	 15.95   
+chroma_hpp[ 4x16]	1.25x 	 10.77    	 13.50   
+chroma_hps[ 4x16]	1.28x 	 10.46    	 13.42   
+chroma_hpp[16x16]	0.98x 	 17.16    	 16.89   
+chroma_hps[16x16]	1.13x 	 16.84    	 19.03   
+chroma_vpp[16x16]	1.08x 	 18.36    	 19.75   
+chroma_vps[16x16]	0.99x 	 17.29    	 17.14   
+chroma_vsp[16x16]	1.07x 	 20.05    	 21.36   
+chroma_hpp[ 8x32]	2.26x 	 18.11    	 40.92   
+chroma_hps[ 8x32]	2.28x 	 16.61    	 37.84   
+chroma_vpp[ 8x32]	2.09x 	 18.91    	 39.44   
+chroma_vps[ 8x32]	1.84x 	 17.82    	 32.83   
+chroma_vsp[ 8x32]	2.55x 	 20.48    	 52.26   
+chroma_hpp[32x32]	2.06x 	 54.95    	 112.96  
+chroma_hps[32x32]	1.15x 	 49.19    	 56.66   
+chroma_vpp[32x32]	1.16x 	 59.93    	 69.75   
+chroma_vps[32x32]	1.00x 	 55.70    	 55.77   
+chroma_vsp[32x32]	1.03x 	 66.44    	 68.41   
+chroma_hpp[16x64]	0.98x 	 56.29    	 55.05   
+chroma_hps[16x64]	1.16x 	 48.98    	 56.77   
+chroma_vpp[16x64]	1.11x 	 61.03    	 67.52   
+chroma_vps[16x64]	0.99x 	 56.98    	 56.16   
+chroma_vsp[16x64]	1.06x 	 67.78    	 71.89   
+chroma_hpp[ 8x12]	1.90x 	 9.39     	 17.80   
+chroma_hps[ 8x12]	1.93x 	 9.56     	 18.40   
+chroma_vpp[ 8x12]	1.77x 	 9.69     	 17.17   
+chroma_vps[ 8x12]	1.59x 	 9.27     	 14.77   
+chroma_vsp[ 8x12]	2.15x 	 10.30    	 22.16   
+chroma_hpp[  8x4]	1.45x 	 5.83     	 8.44    
+chroma_hps[  8x4]	1.57x 	 6.82     	 10.69   
+chroma_vpp[  8x4]	1.40x 	 6.00     	 8.39    
+chroma_vps[  8x4]	1.30x 	 5.86     	 7.61    
+chroma_vsp[  8x4]	1.64x 	 6.25     	 10.25   
+chroma_hpp[16x24]	0.98x 	 23.70    	 23.16   
+chroma_hps[16x24]	1.15x 	 22.16    	 25.45   
+chroma_vpp[16x24]	1.08x 	 25.47    	 27.51   
+chroma_vps[16x24]	1.00x 	 23.78    	 23.74   
+chroma_vsp[16x24]	1.07x 	 27.92    	 29.75   
+chroma_hpp[12x32]	1.46x 	 29.46    	 43.01   
+chroma_hps[12x32]	2.04x 	 26.40    	 53.75   
+chroma_hpp[ 16x8]	0.99x 	 10.69    	 10.57   
+chroma_hps[ 16x8]	1.10x 	 11.61    	 12.75   
+chroma_vpp[ 16x8]	1.07x 	 11.26    	 12.05   
+chroma_vps[ 16x8]	1.01x 	 10.76    	 10.82   
+chroma_vsp[ 16x8]	1.02x 	 12.09    	 12.38   
+chroma_hpp[ 4x32]	1.34x 	 17.37    	 23.32   
+chroma_hps[ 4x32]	1.38x 	 15.72    	 21.63   
+chroma_hpp[32x48]	2.09x 	 80.32    	 167.89  
+chroma_hps[32x48]	1.15x 	 69.97    	 80.67   
+chroma_vpp[32x48]	1.16x 	 87.89    	 102.30  
+chroma_vps[32x48]	1.00x 	 81.64    	 81.79   
+chroma_vsp[32x48]	1.02x 	 97.82    	 100.06  
+chroma_hpp[24x64]	1.58x 	 81.08    	 128.12  
+chroma_hps[24x64]	1.83x 	 69.76    	 127.51  
+chroma_vpp[24x64]	1.61x 	 88.41    	 142.57  
+chroma_vps[24x64]	1.57x 	 82.20    	 129.26  
+chroma_vsp[24x64]	1.66x 	 98.38    	 163.56  
+chroma_hpp[32x16]	1.98x 	 29.57    	 58.51   
+chroma_hps[32x16]	1.14x 	 28.66    	 32.70   
+chroma_vpp[32x16]	1.15x 	 32.07    	 36.99   
+chroma_vps[32x16]	1.01x 	 29.92    	 30.19   
+chroma_vsp[32x16]	1.03x 	 35.29    	 36.20   
+chroma_hpp[ 8x64]	2.42x 	 32.15    	 77.88   
+chroma_hps[ 8x64]	2.44x 	 28.15    	 68.60   
+chroma_vpp[ 8x64]	2.22x 	 33.70    	 74.78   
+chroma_vps[ 8x64]	1.93x 	 31.76    	 61.31   
+chroma_vsp[ 8x64]	2.69x 	 37.24    	 100.24  
+= Color Space i444 =
+chroma_hpp[  4x4]	1.07x 	 5.76     	 6.14    
+chroma_hps[  4x4]	1.15x 	 6.45     	 7.40    
+chroma_hpp[  8x8]	1.71x 	 7.67     	 13.10   
+chroma_hps[  8x8]	1.80x 	 8.12     	 14.60   
+chroma_vpp[  8x8]	1.64x 	 7.82     	 12.83   
+chroma_vps[  8x8]	1.44x 	 7.56     	 10.90   
+chroma_vsp[  8x8]	1.90x 	 8.28     	 15.72   
+chroma_hpp[16x16]	0.98x 	 17.22    	 16.91   
+chroma_hps[16x16]	1.14x 	 16.84    	 19.11   
+chroma_vpp[16x16]	1.08x 	 18.37    	 19.79   
+chroma_vps[16x16]	1.00x 	 17.30    	 17.23   
+chroma_vsp[16x16]	1.06x 	 20.05    	 21.24   
+chroma_hpp[32x32]	2.06x 	 54.93    	 112.94  
+chroma_hps[32x32]	1.15x 	 49.14    	 56.73   
+chroma_vpp[32x32]	1.16x 	 59.94    	 69.74   
+chroma_vps[32x32]	1.00x 	 55.65    	 55.82   
+chroma_vsp[32x32]	1.03x 	 66.45    	 68.44   
+chroma_hpp[64x64]	1.52x 	 208.51   	 315.92  
+chroma_hps[64x64]	1.14x 	 174.89   	 199.22  
+chroma_vpp[64x64]	1.02x 	 225.68   	 231.23  
+chroma_vps[64x64]	0.85x 	 209.02   	 177.71  
+chroma_vsp[64x64]	0.91x 	 251.93   	 229.40  
+chroma_hpp[  8x4]	1.46x 	 5.83     	 8.49    
+chroma_hps[  8x4]	1.57x 	 6.81     	 10.68   
+chroma_vpp[  8x4]	1.39x 	 5.99     	 8.33    
+chroma_vps[  8x4]	1.29x 	 5.86     	 7.58    
+chroma_vsp[  8x4]	1.61x 	 6.37     	 10.23   
+chroma_hpp[  4x8]	1.17x 	 7.54     	 8.82    
+chroma_hps[  4x8]	1.20x 	 7.86     	 9.44    
+chroma_hpp[ 16x8]	0.99x 	 10.73    	 10.57   
+chroma_hps[ 16x8]	1.11x 	 11.48    	 12.78   
+chroma_vpp[ 16x8]	1.07x 	 11.28    	 12.05   
+chroma_vps[ 16x8]	1.00x 	 10.74    	 10.76   
+chroma_vsp[ 16x8]	1.03x 	 12.08    	 12.44   
+chroma_hpp[ 8x16]	2.02x 	 11.17    	 22.54   
+chroma_hps[ 8x16]	2.03x 	 10.95    	 22.21   
+chroma_vpp[ 8x16]	1.87x 	 11.55    	 21.64   
+chroma_vps[ 8x16]	1.67x 	 11.00    	 18.36   
+chroma_vsp[ 8x16]	2.29x 	 12.34    	 28.21   
+chroma_hpp[32x16]	1.98x 	 29.53    	 58.45   
+chroma_hps[32x16]	1.14x 	 28.66    	 32.74   
+chroma_vpp[32x16]	1.15x 	 32.04    	 36.97   
+chroma_vps[32x16]	1.01x 	 29.91    	 30.29   
+chroma_vsp[32x16]	1.03x 	 35.27    	 36.23   
+chroma_hpp[16x32]	0.98x 	 30.26    	 29.71   
+chroma_hps[16x32]	1.16x 	 27.48    	 31.76   
+chroma_vpp[16x32]	1.09x 	 32.57    	 35.47   
+chroma_vps[16x32]	1.00x 	 30.46    	 30.37   
+chroma_vsp[16x32]	1.06x 	 35.82    	 37.95   
+chroma_hpp[64x32]	1.50x 	 106.53   	 160.07  
+chroma_hps[64x32]	1.14x 	 92.91    	 105.87  
+chroma_vpp[64x32]	1.03x 	 114.90   	 118.14  
+chroma_vps[64x32]	0.86x 	 106.29   	 91.22   
+chroma_vsp[64x32]	0.92x 	 127.87   	 117.13  
+chroma_hpp[32x64]	2.10x 	 105.68   	 221.96  
+chroma_hps[32x64]	1.16x 	 90.56    	 104.64  
+chroma_vpp[32x64]	1.17x 	 115.79   	 135.04  
+chroma_vps[32x64]	1.01x 	 107.47   	 108.19  
+chroma_vsp[32x64]	1.02x 	 129.02   	 131.95  
+chroma_hpp[16x12]	0.98x 	 13.96    	 13.73   
+chroma_hps[16x12]	1.12x 	 14.21    	 15.89   
+chroma_vpp[16x12]	1.08x 	 14.81    	 15.92   
+chroma_vps[16x12]	1.00x 	 14.00    	 14.03   
+chroma_vsp[16x12]	1.06x 	 16.04    	 17.06   
+chroma_hpp[12x16]	1.39x 	 16.83    	 23.45   
+chroma_hps[12x16]	1.91x 	 16.18    	 30.85   
+chroma_hpp[ 16x4]	0.99x 	 7.45     	 7.36    
+chroma_hps[ 16x4]	1.07x 	 9.07     	 9.68    
+chroma_vpp[ 16x4]	1.07x 	 7.71     	 8.24    
+chroma_vps[ 16x4]	1.02x 	 7.45     	 7.57    
+chroma_vsp[ 16x4]	1.07x 	 8.12     	 8.68    
+chroma_hpp[ 4x16]	1.25x 	 10.76    	 13.48   
+chroma_hps[ 4x16]	1.28x 	 10.46    	 13.43   
+chroma_hpp[32x24]	2.03x 	 42.21    	 85.60   
+chroma_hps[32x24]	1.15x 	 38.86    	 44.73   
+chroma_hpp[24x32]	1.56x 	 42.57    	 66.27   
+chroma_hps[24x32]	1.80x 	 38.29    	 68.76   
+chroma_vpp[24x32]	1.59x 	 46.27    	 73.62   
+chroma_vps[24x32]	1.55x 	 43.07    	 66.90   
+chroma_vsp[24x32]	1.64x 	 51.14    	 84.05   
+chroma_hpp[ 32x8]	1.86x 	 16.86    	 31.36   
+chroma_hps[ 32x8]	1.12x 	 18.43    	 20.61   
+chroma_vpp[ 32x8]	1.14x 	 18.08    	 20.70   
+chroma_vps[ 32x8]	1.01x 	 17.02    	 17.24   
+chroma_vsp[ 32x8]	1.06x 	 19.70    	 20.88   
+chroma_hpp[ 8x32]	2.27x 	 18.11    	 41.05   
+chroma_hps[ 8x32]	2.28x 	 16.61    	 37.84   
+chroma_vpp[ 8x32]	2.09x 	 18.89    	 39.43   
+chroma_vps[ 8x32]	1.84x 	 17.85    	 32.89   
+chroma_vsp[ 8x32]	2.54x 	 20.56    	 52.32   
+chroma_hpp[64x48]	1.51x 	 157.00   	 237.63  
+chroma_hps[64x48]	1.14x 	 133.50   	 152.16  
+chroma_vpp[64x48]	1.03x 	 170.14   	 174.95  
+chroma_vps[64x48]	0.85x 	 157.66   	 134.60  
+chroma_vsp[64x48]	0.91x 	 189.89   	 173.07  
+chroma_hpp[48x64]	1.75x 	 155.12   	 271.84  
+chroma_hps[48x64]	1.14x 	 132.25   	 151.40  
+chroma_vpp[48x64]	1.09x 	 170.72   	 186.13  
+chroma_vps[48x64]	0.91x 	 158.13   	 143.68  
+chroma_vsp[48x64]	0.96x 	 190.36   	 183.00  
+chroma_hpp[64x16]	1.49x 	 55.15    	 82.02   
+chroma_hps[64x16]	1.13x 	 52.28    	 59.28   
+chroma_vpp[64x16]	1.03x 	 59.32    	 61.16   
+chroma_vps[64x16]	0.87x 	 55.13    	 47.71   
+chroma_vsp[64x16]	0.91x 	 66.03    	 60.20   
+chroma_hpp[16x64]	0.98x 	 56.41    	 55.11   
+chroma_hps[16x64]	1.16x 	 49.01    	 57.05   
+chroma_vpp[16x64]	1.11x 	 61.03    	 67.50   
+chroma_vps[16x64]	0.99x 	 56.99    	 56.24   
+chroma_vsp[16x64]	1.06x 	 67.78    	 71.85   
+== intrapred primitives ==
+

@@ -110,6 +110,8 @@ void x265_blockfill_s_4x4_neon(int16_t* dst, intptr_t dstride, int16_t val);
 void x265_blockfill_s_8x8_neon(int16_t* dst, intptr_t dstride, int16_t val);
 void x265_blockfill_s_16x16_neon(int16_t* dst, intptr_t dstride, int16_t val);
 void x265_blockfill_s_32x32_neon(int16_t* dst, intptr_t dstride, int16_t val);
+void x265_blockfill_s_64x64_neon(int16_t* dst, intptr_t dstride, int16_t val);
+
 
 uint32_t x265_copy_cnt_4_neon(int16_t* coeff, const int16_t* residual, intptr_t resiStride);
 uint32_t x265_copy_cnt_8_neon(int16_t* coeff, const int16_t* residual, intptr_t resiStride);

@@ -70,9 +70,11 @@ protected:
 #include <intrin.h>
 #elif (!defined(__APPLE__) && (defined (__GNUC__) && (defined(__x86_64__) || defined(__i386__))))
 #include <x86intrin.h>
-#elif ( !defined(__APPLE__) && defined (__GNUC__) && defined(__ARM_NEON__))
-#include <arm_neon.h>
 #elif defined(__GNUC__) && (!defined(__clang__) || __clang_major__ < 4)
+#if ( !defined(__APPLE__) && defined(__ARM_NEON__))
+#include <arm_neon.h>
+#endif
+
 /* fallback for older GCC/MinGW */
 static inline uint32_t __rdtsc(void)
 {
@@ -89,6 +91,8 @@ static inline uint32_t __rdtsc(void)
 #endif
     return a;
 }
+#else
+#error No suitable application for __rdtsc
 #endif // ifdef _MSC_VER
 
 #define BENCH_RUNS 2000

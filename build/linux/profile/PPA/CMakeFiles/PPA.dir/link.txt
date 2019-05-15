@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPPA.a  CMakeFiles/PPA.dir/ppa.cpp.o
+/usr/bin/ranlib libPPA.a
